@@ -1,0 +1,90 @@
+.container,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #f9fdff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+
+}
+
+.page-header {
+  overflow: hidden;
+  background-color: lightgray;
+
+}
+
+.page-header__wrapper {
+  display: flex;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.page-header__logo {
+  padding-top: 5px;
+  height: auto;
+  width: auto;
+}
+
+.page-header__site-nav {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 140px;
+  align-items: center;
+}
+
+.site-nav__list {
+  display: flex;
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav__item {
+  width: 33.3%;
+}
+
+.site-nav__item:nth-child(3n) {
+  text-align: right;
+}
+
+.site-nav__item a {
+  font-size: 17px;
+  line-height: 19px;
+  color: #303032;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+
+.site-nav__item a:focus,
+.site-nav__item a:hover {
+  opacity: 0.8;
+}
+
+.site-nav__item a:active {
+  opacity: 0.6;
+}
+
+.site-nav__button {
+  display: none;
+}

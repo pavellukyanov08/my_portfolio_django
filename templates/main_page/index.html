@@ -4,7 +4,7 @@
 {% block css %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock %}
 
 {% block content %}
-    <section class="page-main">
+    <section class="page-upper">
         <div class="sale container">
             <div class="last-chance">
                 <h2>Последний шанс</h2>
@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="product-sale__img">
-                        <img src="src/images/chair-caramel-desktop.png" alt="стул">
+                        <img src="{% static 'main_page/chair-caramel-desktop.png' %}" alt="стул">
                     </div>
 
                     <div class="product-sale__buy">
@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="product-sale__img">
-                        <img src="src/images/chair-cloud-desktop.jpg" alt="стул">
+                        <img src="{% static 'main_page/chair-cloud-desktop.jpg' %}" alt="стул">
                     </div>
 
                     <div class="product-sale__buy">
@@ -72,7 +72,7 @@
                     </div>
 
                     <div class="product-sale__img">
-                        <img src="src/images/chair-owl-desktop.png" alt="стул">
+                        <img src="{% static 'main_page/chair-owl-desktop.png' %}" alt="стул">
                     </div>
 
                     <div class="product-sale__buy">
@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="product-sale__img">
-                        <img src="src/images/chair-maya-desktop.jpg" alt="стул">
+                        <img src="{% static 'main_page/chair-maya-desktop.jpg' %}" alt="стул">
                     </div>
 
                     <div class="product-sale__buy">
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="product-sale__img">
-                        <img src="src/images/chair-messi-desktop.png" alt="стул">
+                        <img src="{% static 'main_page/chair-messi-desktop.png' %}" alt="стул">
                     </div>
 
                     <div class="product-sale__buy">
@@ -124,11 +124,17 @@
         </div>
     </section>
 
-    <footer>
+    <section class="page-middle">
+        <div class="back-img container">
+            <img src="{% static 'main_page/back-img.jpg' %}" alt="задний фон">
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="basement container">
             <div class="top-line">
                 <div class="top-line__logo">
-                    <img src="src/images/logo.svg" alt="logo">
+                    <img src="{% static 'main_page/logo.svg' %}" alt="logo">
                 </div>
 
                 <div class="top-line__menu">
@@ -141,18 +147,18 @@
 
             <div class="bottom-line">
                 <div class="phone-number">
-                    <img src="src/images/icon-phone.svg" alt="phone-icon">
+                    <img src="{% static 'main_page/icon-phone.svg' %}" alt="phone-icon">
                     <p>+7(495) 205-28-14</p>
                 </div>
 
                 <div class="main-adress">
-                    <img src="src/images/icon-mail.svg" alt="icon-main">
+                    <img src="{% static 'main_page/icon-mail.svg' %}" alt="icon-main">
                     <p>callium@gmail.com</p>
                 </div>
             </div>
 
             <div class="rights">
-                <img src="src/images/line-botton.svg" alt="line">
+                <img src="{% static 'main_page/line-botton.svg' %}" alt="line">
                 <p>© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
             </div>
         </div>

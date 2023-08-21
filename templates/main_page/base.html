@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block css %} {% endblock %}
     <title>Title</title>
 </head>
@@ -11,13 +11,14 @@
     <header class="page-header">
         <div class="page-header__wrapper container">
             <div class="page-header__logo">
-{#                <a href="#"><img src="src/images/logo.svg" width="20" height="20" alt="Логотип Callium"></a>#}
+                <img src="{% static 'main_page/my_logo.svg' %}" width="80" height="80"
+                                 alt="Логотип автора">
             </div>
 
             <nav class="site-nav page-header__site-nav">
                 <ul class="site-nav__list">
-                    <li class="site-nav__item"><a href="/">Главная</a></li>
-                    <li class="site-nav__item"><a href="{% url 'about' %}">Об авторе</a></li>
+                    <li class="site-nav__item"><a href="#">Главная</a></li>
+                    <li class="site-nav__item"><a href="photo.html">Фото</a></li>
                 </ul>
             </nav>
         </div>
