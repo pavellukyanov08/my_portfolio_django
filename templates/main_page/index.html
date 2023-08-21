@@ -1,0 +1,160 @@
+{% extends 'main_page/base.html' %}
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock %}
+
+{% block content %}
+    <section class="page-main">
+        <div class="sale container">
+            <div class="last-chance">
+                <h2>Последний шанс</h2>
+            </div>
+
+            <div class="last-chance__button">
+                <a href="#">Стулья</a>
+                <a href="#">Диваны</a>
+                <a href="#">Кресла</a>
+            </div>
+
+            <div class="product-sale__info">
+                <div class="product-sale__item">
+                    <div class="product-sale__above"></div>
+
+                    <div class="product-sale__name">
+                        <h3>Стул "Карамель"</h3>
+                    </div>
+
+                    <div class="product-sale__price">
+                        <p class="product-price__new">$195</p>
+                        <p class="product-price__old">$245</p>
+                    </div>
+
+                    <div class="product-sale__img">
+                        <img src="src/images/chair-caramel-desktop.png" alt="стул">
+                    </div>
+
+                    <div class="product-sale__buy">
+                        Купить
+                    </div>
+                </div>
+
+                <div class="product-sale__item">
+                    <div class="product-sale__above"></div>
+
+                    <div class="product-sale__name">
+                        <h3>Стул "Облако"</h3>
+                    </div>
+
+                    <div class="product-sale__price">
+                        <p class="product-price__new">$200</p>
+                        <p class="product-price__old">$250</p>
+                    </div>
+
+                    <div class="product-sale__img">
+                        <img src="src/images/chair-cloud-desktop.jpg" alt="стул">
+                    </div>
+
+                    <div class="product-sale__buy">
+                        Купить
+                    </div>
+                </div>
+
+                <div class="product-sale__item">
+                    <div class="product-sale__above"></div>
+
+                    <div class="product-sale__name">
+                        <h3>Стул "Сова"</h3>
+                    </div>
+
+                    <div class="product-sale__price">
+                        <p class="product-price__new">$240</p>
+                        <p class="product-price__old">$260</p>
+                    </div>
+
+                    <div class="product-sale__img">
+                        <img src="src/images/chair-owl-desktop.png" alt="стул">
+                    </div>
+
+                    <div class="product-sale__buy">
+                        Купить
+                    </div>
+                </div>
+
+                <div class="product-sale__item">
+                    <div class="product-sale__above"></div>
+
+                    <div class="product-sale__name">
+                        <h3>Стул "Мая"</h3>
+                    </div>
+
+                    <div class="product-sale__price">
+                        <p class="product-price__new">$280</p>
+                        <p class="product-price__old">$330</p>
+                    </div>
+
+                    <div class="product-sale__img">
+                        <img src="src/images/chair-maya-desktop.jpg" alt="стул">
+                    </div>
+
+                    <div class="product-sale__buy">
+                        Купить
+                    </div>
+                </div>
+
+                <div class="product-sale__item">
+                    <div class="product-sale__above"></div>
+                    <div class="product-sale__name">
+                        <h3>Стул "Месси"</h3>
+                    </div>
+
+                    <div class="product-sale__price">
+                        <p class="product-price__new">$280</p>
+                        <p class="product-price__old">$305</p>
+                    </div>
+
+                    <div class="product-sale__img">
+                        <img src="src/images/chair-messi-desktop.png" alt="стул">
+                    </div>
+
+                    <div class="product-sale__buy">
+                        Купить
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="basement container">
+            <div class="top-line">
+                <div class="top-line__logo">
+                    <img src="src/images/logo.svg" alt="logo">
+                </div>
+
+                <div class="top-line__menu">
+                    <a class="top-line__menu-item" href="#">Доставка</a>
+                    <a class="top-line__menu-item" href="#">Оплата</a>
+                    <a class="top-line__menu-item" href="#">Контакты</a>
+                    <a class="top-line__menu-item" href="#">Гарантии</a>
+                </div>
+            </div>
+
+            <div class="bottom-line">
+                <div class="phone-number">
+                    <img src="src/images/icon-phone.svg" alt="phone-icon">
+                    <p>+7(495) 205-28-14</p>
+                </div>
+
+                <div class="main-adress">
+                    <img src="src/images/icon-mail.svg" alt="icon-main">
+                    <p>callium@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="rights">
+                <img src="src/images/line-botton.svg" alt="line">
+                <p>© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
