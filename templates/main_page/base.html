@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,15 +11,16 @@
     <header class="page-header">
         <div class="page-header__wrapper container">
             <div class="page-header__logo">
-                <img src="{% static 'main_page/my_logo.svg' %}" width="80" height="80"
-                                 alt="Логотип автора">
+                <a href="{% url "index" %}"><img src="{% static 'main_page/my_logo.svg' %}"
+                                                 width="80" height="80" alt="Логотип автора"></a>
             </div>
 
             <nav class="site-nav page-header__site-nav">
+                {% for el in menu %}
                 <ul class="site-nav__list">
-                    <li class="site-nav__item"><a href="#">Главная</a></li>
-                    <li class="site-nav__item"><a href="photo.html">Фото</a></li>
+                    <li class="site-nav__item"><a href="{{ el.url }}">{{ el.title }}</a></li>
                 </ul>
+                {% endfor %}
             </nav>
         </div>
     </header>

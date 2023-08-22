@@ -9,4 +9,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     # about
     path('about/', include('about.urls')),
+    # blogs
+    path('blogs/', include('blogs.urls')),
 ]
