@@ -1,8 +1,19 @@
 {% extends 'main_page/base.html' %}
 {% load static %}
 
-{% block css %} {% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+{% endblock %}
 
 {% block content %}
+    {% for blog in blogs %}
+    <div class="elements container">
+        <h2 class="top">{{ blog.title }}</h2>
+        <div class="blog-text">
+            <p>{{ blog.description | striptags | safe }}</p>
+        </div>
+    </div>
+    {% endfor %}
+
 
 {% endblock %}

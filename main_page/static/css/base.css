@@ -30,7 +30,7 @@ a {
 .page-header {
   overflow: hidden;
   background-color: lightgray;
-
+  padding-bottom: 30px;
 }
 
 .page-header__wrapper {
