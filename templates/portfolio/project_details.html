@@ -11,6 +11,10 @@
         <div class="details-text">
             <p>{{ project.description | safe }}</p>
         </div>
+
+        <div class="project-img">
+            <img src="{{ project.image.url }}" alt="Изображение проекта">
+        </div>
         <div class="source-project">
             <p>Скачать исходный код проекта или посмотреть его на GitHub вы можете ниже:</p>
             <div class="download-project">

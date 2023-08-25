@@ -1,0 +1,30 @@
+.details {
+    margin-top: 30px;
+}
+
+.details h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.details p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+
+}
+
+.details-text {
+    background-color: #f3ecec;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.details-text p {
+    text-indent: 1.5em;
+    font-size: 20px;
+}
