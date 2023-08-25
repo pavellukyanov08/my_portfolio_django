@@ -1,7 +1,14 @@
 /* Начало блога */
-h2 {
+h1 {
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 30px 30px;
+  /*font-size: 20px;*/
+  text-transform: uppercase;
+
+}
+
+section {
+  margin-top: 30px;
 }
 
 .auth-info p {

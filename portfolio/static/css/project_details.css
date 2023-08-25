@@ -1,0 +1,33 @@
+h2 {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.details {
+    font-size: 25px;
+}
+
+.details-text {
+    background-color: #fceae8;
+}
+
+.source-project {
+    margin-top: 20px;
+}
+
+.download-project {
+    display: flex;
+}
+
+.download-project h3 {
+    margin: 0 10px 0 10px;
+}
+
+.download-project a {
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: lightgrey;
+    border-radius: 5px;
+}

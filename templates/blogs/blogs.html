@@ -6,14 +6,22 @@
 {% endblock %}
 
 {% block content %}
-    {% for blog in blogs %}
-    <div class="elements container">
-        <h2 class="top">{{ blog.title }}</h2>
-        <div class="blog-text">
-            <p>{{ blog.description | striptags | safe }}</p>
-        </div>
-    </div>
-    {% endfor %}
+    <h1>Статьи</h1>
+    <p class="count container">Постов: {{ blogs.count }}</p>
 
+    {% for blog in blogs %}
+        <div class="elements container">
+            <div class="top">
+                <a href="{% url 'blog:blog_details' blog.id %}">{{ blog.title }}</a>
+                <img src="{{ blog.logo.url }}" width="50" height="50" alt="Логотип">
+            </div>
+
+
+            <div class="blog-text">
+                <p>{{ blog.description | striptags | truncatechars:360 }}</p>
+            </div>
+            <p> {{ blog.date | date:'d.m.Y' }}</p>
+        </div>
+    {% endfor %}
 
 {% endblock %}

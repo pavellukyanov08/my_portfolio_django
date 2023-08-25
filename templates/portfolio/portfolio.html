@@ -1,0 +1,26 @@
+{% extends 'main_page/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Мои проекты</h1>
+    <p class="count container">Количество проектов: {{ projects.count }} (проекты будут дополняться)</p>
+
+    {% for project in projects %}
+        <div class="projects container">
+            <div class="top">
+                <a href="{% url 'project:project_details' project.id %}">{{ project.title }}</a>
+            </div>
+
+
+            <div class="description-text">
+                <p>{{ project.description | striptags | truncatechars:360 }}</p>
+            </div>
+            <p> {{ project.date | date:'d.m.Y' }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}

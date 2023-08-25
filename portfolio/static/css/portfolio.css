@@ -8,7 +8,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.elements {
+.projects {
   text-align: justify;
   border: 5px solid lightgray;
   background-color: lightyellow;
@@ -35,7 +35,7 @@ h1 {
   cursor: pointer;
 }
 
-.blog-text {
+.description-text {
   font-size: 20px;
   padding: 15px;
   text-indent: 1.5em;

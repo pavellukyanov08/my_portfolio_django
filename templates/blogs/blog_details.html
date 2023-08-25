@@ -1,0 +1,17 @@
+{% extends 'main_page/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="details container">
+        <h2>{{ blog.title }}</h2>
+        <p>Дата публикации: {{ blog.date | date:'d.m.Y' }}</p>
+        <img src="{{ blog.img.url }}" alt="Изображение">
+        <div class="details-text">
+            <p>{{ blog.description | safe }}</p>
+        </div>
+    </div>
+{% endblock %}

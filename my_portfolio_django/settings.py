@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'main_page.apps.MainPageConfig',
     'about.apps.AboutConfig',
     'blogs.apps.BlogsConfig',
+    'portfolio.apps.PortfolioConfig'
 ]
 
 MIDDLEWARE = [
@@ -112,6 +113,8 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
 MEDIA_ROOT = BASE_DIR / MEDIA_URL
+
+STATIC_ROOT = BASE_DIR / STATIC_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

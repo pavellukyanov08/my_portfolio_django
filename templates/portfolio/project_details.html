@@ -1,0 +1,23 @@
+{% extends 'main_page/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/project_details.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="details container">
+        <h2>{{ project.title }}</h2>
+        <div class="details-text">
+            <p>{{ project.description | safe }}</p>
+        </div>
+        <div class="source-project">
+            <p>Скачать исходный код проекта или посмотреть его на GitHub вы можете ниже:</p>
+            <div class="download-project">
+                <a class="button" href="{{ project.source.url }}" download>Скачать файл</a>
+                <h3>/</h3>
+                <a class="link" href="https://github.com/pavellukyanov08/Furniture-design">Репозиторий проекта</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

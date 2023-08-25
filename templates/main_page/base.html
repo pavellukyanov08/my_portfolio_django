@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block css %} {% endblock %}
-    <title>Title</title>
+    <title>{{ title }}</title>
 </head>
 <body>
     <header class="page-header">
         <div class="page-header__wrapper container">
             <div class="page-header__logo">
-                <a href="{% url "index" %}"><img src="{% static 'main_page/my_logo.svg' %}"
-                                                 width="80" height="80" alt="Логотип автора"></a>
+                <a href="{% url "index" %}">
+                    <img src="{% static 'main_page/my_logo.svg' %}" width="80" height="80" alt="Логотип автора">
+                </a>
             </div>
 
             <nav class="site-nav page-header__site-nav">
